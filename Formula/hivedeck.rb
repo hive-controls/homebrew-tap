@@ -5,21 +5,21 @@
 class Hivedeck < Formula
   desc "hivedeck is a terminal launcher and monitor for the tools that live in a repository."
   homepage "https://github.com/hive-controls/hivedeck"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hive-controls/hivedeck/releases/download/v0.1.1/hivedeck_0.1.1_darwin_amd64.tar.gz"
-      sha256 "6b4905037885461b42b6c57f7571c20239c86a2bc87f2805a4123daea2c97766"
+      url "https://github.com/hive-controls/hivedeck/releases/download/v0.1.2/hivedeck_0.1.2_darwin_amd64.tar.gz"
+      sha256 "861f86fd2c3289c382c38c8c5d380b153397af5d04564aeea7e3f0f38a3dc619"
 
       define_method(:install) do
         bin.install "hivedeck"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hive-controls/hivedeck/releases/download/v0.1.1/hivedeck_0.1.1_darwin_arm64.tar.gz"
-      sha256 "ac4ac557829bb22f30fb6a983c9085fb8672e1f05d64b0958fb4c44a61b45965"
+      url "https://github.com/hive-controls/hivedeck/releases/download/v0.1.2/hivedeck_0.1.2_darwin_arm64.tar.gz"
+      sha256 "4b876f5f5dfdb89726cc1ba93c3dfc80dd44344bd0a06a406cb55553880d3f4c"
 
       define_method(:install) do
         bin.install "hivedeck"
@@ -29,15 +29,15 @@ class Hivedeck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hive-controls/hivedeck/releases/download/v0.1.1/hivedeck_0.1.1_linux_amd64.tar.gz"
-      sha256 "cd037d217e8a926efd092757d11f5186290af07bf0c8d72cf7e2194036a98869"
+      url "https://github.com/hive-controls/hivedeck/releases/download/v0.1.2/hivedeck_0.1.2_linux_amd64.tar.gz"
+      sha256 "0ecc18b066a8d63befb4f76d6290861cf5bc65d64fa7b8ca9cd29b5f899ce042"
       define_method(:install) do
         bin.install "hivedeck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hive-controls/hivedeck/releases/download/v0.1.1/hivedeck_0.1.1_linux_arm64.tar.gz"
-      sha256 "868e150afc36502403d2f7c065d4923933cbe79d4f8b165b7384608c4c6fc9b1"
+      url "https://github.com/hive-controls/hivedeck/releases/download/v0.1.2/hivedeck_0.1.2_linux_arm64.tar.gz"
+      sha256 "1961e45b5cd8f2b1455e275e8401b5bc24f5bfbfebae1740bec67c48b57b3cbc"
       define_method(:install) do
         bin.install "hivedeck"
       end
