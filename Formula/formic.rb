@@ -5,21 +5,21 @@
 class Formic < Formula
   desc "formic is a terminal launcher and monitor for the tools that live in a repository."
   homepage "https://github.com/hive-controls/formic"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hive-controls/formic/releases/download/v0.3.0/formic_0.3.0_darwin_amd64.tar.gz"
-      sha256 "4ef003b408dc1544b383bcb0b490cfaee6cace1f9d55b522fcbfe25378e4487f"
+      url "https://github.com/hive-controls/formic/releases/download/v0.4.0/formic_0.4.0_darwin_amd64.tar.gz"
+      sha256 "30a41ba2b7bedd52c34e10dcd7b96eb91c858daf4bbf36276f7adba5d9dcad1d"
 
       define_method(:install) do
         bin.install "formic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hive-controls/formic/releases/download/v0.3.0/formic_0.3.0_darwin_arm64.tar.gz"
-      sha256 "b46abb2bc3b96358df014ea28815724973dde077d7808820c9972e154118c6ae"
+      url "https://github.com/hive-controls/formic/releases/download/v0.4.0/formic_0.4.0_darwin_arm64.tar.gz"
+      sha256 "e81b68e27e9f00e259477748f8c81111dddc308a08c9da52cefdf1e24cfcf840"
 
       define_method(:install) do
         bin.install "formic"
@@ -29,15 +29,15 @@ class Formic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hive-controls/formic/releases/download/v0.3.0/formic_0.3.0_linux_amd64.tar.gz"
-      sha256 "3032269ac7a90ce7a0791901719780203cf57b5b64f491b9eef33658c29788a4"
+      url "https://github.com/hive-controls/formic/releases/download/v0.4.0/formic_0.4.0_linux_amd64.tar.gz"
+      sha256 "57e47e032e3d319606719fa6a0c8dd7d3e6b33c8202abe17ab0bb5443a60573a"
       define_method(:install) do
         bin.install "formic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hive-controls/formic/releases/download/v0.3.0/formic_0.3.0_linux_arm64.tar.gz"
-      sha256 "19f9bbc8e0bc07a3639a99b671948927192b07f0d9c9d7109de137a87e00b1c5"
+      url "https://github.com/hive-controls/formic/releases/download/v0.4.0/formic_0.4.0_linux_arm64.tar.gz"
+      sha256 "b1b629a635cc819331ca5f52955218f50e296d666b1323ecfd18d2e5b35f93aa"
       define_method(:install) do
         bin.install "formic"
       end
